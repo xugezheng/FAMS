@@ -1,0 +1,58 @@
+# COMMON args
+method: ours  
+model_name: FcNet4
+training_epoch: 80 # 80
+batch_size: 50 # 100
+lr_prior: 0.005 # 0.01
+
+#------------------------------------------------------------------------------------
+#DATASET related
+dataset: adult
+N_subtask: 2
+acc_bar: 0.4 # toxic
+lower_rate: 3 # amazon
+upper_rate: 4 # amazon
+
+
+#------------------------------------------------------------------------------------
+# METHOD Specific
+lr_post: 0.05  # 0.05
+weight: 0.4 # 0.6
+max_inner: 10
+max_outer: 5
+divergence_type: W_Sqr  # W_Sqr KL
+kappa_prior: 0.01
+kappa_post: 0.001
+
+log_var_init_mean: 0.01 #-0.1
+log_var_init_var: 0.01 #0.1
+eps_std: 0.08
+n_MC: 5
+
+#------------------------------------------------------------------------------------
+# CUSTOMER
+seed: 0
+train_inf_step: 2
+use_wandb: False
+wandb_username: YOURWANDBNAME
+exp_name: adult_example
+
+#------------------------------------------------------------------------------------
+#POST
+# acc
+acc_bin: 0.5
+# suf gap
+params:
+    n_bins: 5
+    interpolate_kind: 'linear'  
+
+
+
+
+
+
+
+
+
+
+

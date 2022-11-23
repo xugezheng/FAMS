@@ -1,0 +1,45 @@
+# COMMON args
+method: ours
+model_name: FcNet4
+training_epoch: 80
+batch_size: 50
+lr_prior: 0.001 # main model lr
+
+#------------------------------------------------------------------------------------
+#DATASET related
+dataset: amazon
+sens_attrs: all 
+N_subtask: 200
+acc_bar: 0.5 # toxic
+lower_rate: 3 # amazon
+upper_rate: 4 # amazon
+
+#------------------------------------------------------------------------------------
+# METHOD Specific
+lr_post: 0.8
+weight: 0.4
+divergence_type: W_Sqr  # W_Sqr KL
+kappa_prior: 0.01
+kappa_post: 0.001
+
+log_var_init_mean: 0.01 #-0.1
+log_var_init_var: 0.01 #0.1
+eps_std: 0.08
+n_MC: 5
+
+#------------------------------------------------------------------------------------
+# CUSTOMER
+seed: 4
+train_inf_step: 2
+use_wandb: False
+wandb_username: YOURWANDBNAME
+exp_name: amazon_200_example
+
+#------------------------------------------------------------------------------------
+#POST
+# acc
+acc_bin: 0.5
+# suf gap
+params:
+    n_bins: 10
+    interpolate_kind: 'linear'  
