@@ -1,8 +1,13 @@
-# Code Repo for *On Learning Fairness and Accuracy for Multiple Subgroups*
+# *On Learning Fairness and Accuracy for Multiple Subgroups*
 
-## Getting Started
+---
 
-### Repo Structure
+Official Implement of our paper ***On Learning Fairness and Accuracy for Multiple Subgroups*** (NeurIPS 2022)  
+
+[[arxiv]](https://arxiv.org/abs/2210.10837)
+
+---
+## Repo Structure
 
 ```bash
 .
@@ -63,7 +68,11 @@
     
 ```
 
-### Requirements - env
+---
+
+## Requirements
+
+### ENVS
 
 The algorithme is implemented mainly based on PyTorch Deep Learning Framework, and the datasets utilized are from [WILDS](https://wilds.stanford.edu/).
 
@@ -73,7 +82,7 @@ Please refer to [WILDS get started](https://wilds.stanford.edu/get_started/) or 
 pip install -r requirements.txt
 ```
 
-### Requirements - Data
+### Data
 
 - Datasets
   - WILDS - amazon
@@ -81,7 +90,9 @@ pip install -r requirements.txt
   - Adult
   - Celeba
 
-## Train
+---
+
+## Getting Started - Train
 
 ### Train from scratch
 
@@ -180,3 +191,18 @@ pip install -r requirements.txt
    2. Numerical test result will be saved to `./npy` folder  
 
    Note: We have provided the `wandb` interface to trace the training process and visualize the experimental results. To use the `wandb`, please follow the instruction on [Weights&Biases](https://wandb.ai/site) official site and set `use_wandb` as `True` for `all_train.py` script.
+
+---
+
+## Citation
+
+```
+@inproceedings{
+shui2022on,
+title={On Learning Fairness and Accuracy on Multiple Subgroups},
+author={Changjian Shui and Gezheng Xu and Qi CHEN and Jiaqi Li and Charles Ling and Tal Arbel and Boyu Wang and Christian Gagn{\'e}},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+}
+```
