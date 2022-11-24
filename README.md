@@ -1,6 +1,6 @@
 # *On Learning Fairness and Accuracy for Multiple Subgroups*
 
-Official Implement of our paper ***On Learning Fairness and Accuracy for Multiple Subgroups*** (NeurIPS 2022)  [[arxiv]](https://arxiv.org/abs/2210.10837)
+Official Implementation of our paper ***On Learning Fairness and Accuracy for Multiple Subgroups*** (NeurIPS 2022)  [[arxiv]](https://arxiv.org/abs/2210.10837)
 
 ## Repo Structure
 
@@ -67,7 +67,7 @@ Official Implement of our paper ***On Learning Fairness and Accuracy for Multipl
 
 ### ENVS
 
-The algorithme is implemented mainly based on PyTorch Deep Learning Framework, and the datasets utilized are from [WILDS](https://wilds.stanford.edu/).
+The algorithm is implemented mainly based on PyTorch Deep Learning Framework, and some of the datasets utilized are from [WILDS](https://wilds.stanford.edu/).
 
 Please refer to [WILDS get started](https://wilds.stanford.edu/get_started/) or use the following command to prepare your env.
 
