@@ -1,12 +1,7 @@
 # *On Learning Fairness and Accuracy for Multiple Subgroups*
 
----
+Official Implement of our paper ***On Learning Fairness and Accuracy for Multiple Subgroups*** (NeurIPS 2022)  [[arxiv]](https://arxiv.org/abs/2210.10837)
 
-Official Implement of our paper ***On Learning Fairness and Accuracy for Multiple Subgroups*** (NeurIPS 2022)  
-
-[[arxiv]](https://arxiv.org/abs/2210.10837)
-
----
 ## Repo Structure
 
 ```bash
@@ -67,8 +62,6 @@ Official Implement of our paper ***On Learning Fairness and Accuracy for Multipl
       __init__.py
     
 ```
-
----
 
 ## Requirements
 
@@ -191,8 +184,6 @@ pip install -r requirements.txt
    2. Numerical test result will be saved to `./npy` folder  
 
    Note: We have provided the `wandb` interface to trace the training process and visualize the experimental results. To use the `wandb`, please follow the instruction on [Weights&Biases](https://wandb.ai/site) official site and set `use_wandb` as `True` for `all_train.py` script.
-
----
 
 ## Citation
 
